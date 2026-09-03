@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- 
+        <title> bestämmer texten som visas på webbläsarens flik.
+        Här skriver vi "Studentformulär" eftersom den här sidan
+        innehåller vårt formulär.
+    -->
+    <title>Studentformulär</title>
+
+</head>
+
+<body>
+
+    <!-- 
+        <h1> är sidans huvudrubrik.
+        Den berättar direkt för användaren vad sidan används till.
+    -->
+    <h1>Studentformulär</h1>
+
+
+    <!-- 
+        <form> används för att skapa ett formulär där användaren
+        kan skriva in eller välja information.
+        
+        Formuläret innehåller flera olika typer av input-fält.
+    -->
+    <form>
+
+
+        <!-- 
+            <label> är en text som beskriver vad ett formulärfält är till för.
+            
+            "for" kopplas ihop med "id" på input-fältet.
+            Därför använder båda "name".
+            
+            <input type="text"> skapar ett vanligt textfält.
+            Det passar exempelvis för att skriva sitt namn.
+        -->
+        <label for="name">Namn:</label>
+
+        <input type="text" id="name" name="name">
+
+
+        <!-- 
+            <br> skapar en ny rad.
+            Vi använder två stycken här för att skapa lite mellanrum
+            mellan de olika delarna av formuläret.
+        -->
+        <br><br>
+
+
+        <!-- 
+            type="email" skapar ett fält som är tänkt för e-postadresser.
+            Webbläsaren kan kontrollera att användaren skriver in
+            något som ser ut som en e-postadress.
+        -->
+        <label for="email">Email:</label>
+
+        <input type="email" id="email" name="email">
+
+        <br><br>
+
+
+        <!-- 
+            Här skapar vi en rullgardinslista.
+            
+            <select> skapar själva listan.
+            <option> skapar de olika alternativen som användaren
+            kan välja mellan.
+        -->
+        <label for="subject">Favoritämne:</label>
+
+        <select id="subject" name="subject">
+
+            <option value="matematik">Matematik</option>
+            <option value="fysik">Fysik</option>
+            <option value="engelska">Engelska</option>
+            <option value="svenska">Svenska</option>
+            <option value="webbutveckling">Webbutveckling</option>
+            <option value="programmering">Programmering</option>
+
+        </select>
+
+        <br><br>
+
+
+        <!-- 
+            Här frågar vi användaren vilka hobbyer personen har.
+            
+            <input type="checkbox"> skapar en kryssruta.
+            Till skillnad från radioknappar kan användaren välja
+            flera kryssrutor samtidigt.
+        -->
+        <p>Vilka hobbyer har du?</p>
+
+
+        <!-- Första kryssrutan -->
+        <input type="checkbox" id="sport" name="hobby" value="sport">
+
+        <label for="sport">Sport</label>
+
+        <br>
+
+
+        <!-- Andra kryssrutan -->
+        <input type="checkbox" id="gaming" name="hobby" value="gaming">
+
+        <label for="gaming">Gaming</label>
+
+        <br>
+
+
+        <!-- Tredje kryssrutan -->
+        <input type="checkbox" id="music" name="hobby" value="music">
+
+        <label for="music">Musik</label>
+
+        <br><br>
+
+
+        <!-- 
+            Här använder vi <textarea>.
+            
+            Till skillnad från ett vanligt textfält kan textarea
+            innehålla flera rader text.
+            
+            rows bestämmer ungefär hur många rader som visas.
+            cols bestämmer ungefär hur bred textrutan är.
+        -->
+        <label for="message">Skriv ett meddelande:</label>
+
+        <br>
+
+        <textarea id="message" name="message" rows="5" cols="40"></textarea>
+
+        <br><br>
+
+
+        <!-- 
+            Här skapar vi två knappar.
+            
+            type="submit" används för att skicka formuläret.
+            
+            type="reset" återställer formuläret och tar bort
+            det som användaren har skrivit eller valt.
+        -->
+        <input type="submit" value="Skicka">
+
+        <input type="reset" value="Återställ">
+
+
+    <!-- Här avslutar vi formuläret. -->
+    </form>
+
+
+    <br>
+
+
+    <!-- 
+        Den här länken tar användaren tillbaka till index.html.
+        
+        Eftersom båda HTML-filerna ligger i samma mapp behöver vi
+        inte skriva någon lång sökväg.
+    -->
+    <a href="index.html">Tillbaka till skolan</a>
+
+
+</body>
+</html>

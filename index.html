@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- 
+        <title> bestämmer namnet som visas på webbläsarens flik.
+        Det är alltså inte samma sak som <h1>, som visas inne på själva sidan.
+    -->
+    <title>Min skola</title>
+</head>
+
+<body>
+
+    <!-- 
+        <h1> används för sidans viktigaste och största rubrik.
+        Här berättar vi vad sidan handlar om.
+        En HTML-sida bör normalt ha en tydlig huvudrubrik.
+    -->
+    <h1>Min skola</h1>
+
+
+    <!-- 
+        <h2> används för underrubriker.
+        Eftersom "Om skolan" är en del av sidan använder vi <h2>
+        istället för ännu en <h1>.
+    -->
+    <h2>Om skolan</h2>
+
+    <!-- 
+        <p> betyder paragraph, alltså ett stycke text.
+        Den används när vi vill skriva vanlig text på vår webbsida.
+    -->
+    <p>
+        Min skola är en gymnasieskola där elever kan studera olika program.
+        Jag går Teknikprogrammet och tycker att skolan är en bra plats för att lära sig nya saker.
+    </p>
+
+
+    <!-- Här börjar informationen om favoritämnet. -->
+    <h2>Mitt favoritämne</h2>
+
+    <p>
+        Mitt favoritämne är Webbutveckling eftersom jag tycker om att skapa hemsidor.
+    </p>
+
+
+    <!-- 
+        Här skapar vi en lista över flera skolämnen.
+        <ul> betyder "unordered list", vilket betyder en lista utan numrering.
+        Varje punkt i listan skrivs med <li>, som betyder "list item".
+    -->
+    <h2>Skolämnen</h2>
+
+    <ul>
+        <li>Matematik</li>
+        <li>Fysik</li>
+        <li>Engelska</li>
+        <li>Svenska</li>
+        <li>Webbutveckling</li>
+        <li>Programmering</li>
+    </ul>
+
+
+    <!-- 
+        Här lägger vi till en bild på skolan.
+        
+        <img> används för att visa bilder.
+        "src" berättar för webbläsaren vilken bild som ska visas.
+        "alt" är en beskrivning av bilden och är bra för tillgänglighet.
+        "width" bestämmer bildens bredd.
+        
+        Bilden måste finnas i samma mapp som HTML-filen
+        om vi skriver "skola.jpg" som sökväg.
+    -->
+    <h2>Bild på skolan</h2>
+
+    <img src="skola.jpg" alt="Bild på min skola" width="400">
+
+
+    <!-- 
+        Nu skapar vi en tabell.
+        
+        <table> startar själva tabellen.
+        border="1" gör att vi kan se linjerna runt tabellen.
+        
+        <tr> betyder "table row", alltså en rad.
+        <th> betyder "table header", alltså en rubrikcell.
+        <td> betyder "table data", alltså en vanlig cell.
+    -->
+    <h2>Mina skoldagar</h2>
+
+    <table border="1">
+
+        <!-- Första raden innehåller tabellens rubriker. -->
+        <tr>
+            <th>Dag</th>
+            <th>Ämne</th>
+        </tr>
+
+        <!-- Här kommer den första vanliga raden i tabellen. -->
+        <tr>
+            <td>Måndag</td>
+            <td>Matematik</td>
+        </tr>
+
+        <!-- Här kommer den andra raden. -->
+        <tr>
+            <td>Tisdag</td>
+            <td>Webbutveckling</td>
+        </tr>
+
+        <!-- Här kommer den tredje raden. -->
+        <tr>
+            <td>Onsdag</td>
+            <td>Fysik</td>
+        </tr>
+
+        <!-- Här kommer en extra dag som är en del av extrauppgiften. -->
+        <tr>
+            <td>Torsdag</td>
+            <td>Programmering</td>
+        </tr>
+
+    </table>
+
+
+    <!-- 
+        <ol> betyder "ordered list".
+        Till skillnad från <ul> får vi här en numrerad lista.
+        Webbläsaren skapar automatiskt siffrorna åt oss.
+    -->
+    <h2>Vad jag gör i skolan</h2>
+
+    <ol>
+        <li>Går på lektioner</li>
+        <li>Arbetar med uppgifter</li>
+        <li>Lär mig nya saker</li>
+        <li>Arbetar med projekt</li>
+    </ol>
+
+
+    <!-- 
+        Här använder vi radioknappar.
+        
+        Radioknappar används när användaren ska välja ett alternativ
+        från flera alternativ.
+        
+        Båda knapparna har samma "name", vilket gör att användaren
+        bara kan välja ett av alternativen.
+    -->
+    <h2>Tycker du om skolan?</h2>
+
+    <form>
+
+        <input type="radio" name="school" value="ja">
+        Ja
+
+        <input type="radio" name="school" value="nej">
+        Nej
+
+    </form>
+
+
+    <!-- 
+        <br> betyder line break och används för att hoppa till en ny rad.
+        Här använder vi den för att skapa lite avstånd före länken.
+    -->
+    <br>
+
+
+    <!-- 
+        <a> används för att skapa länkar.
+        
+        "href" bestämmer vart länken leder.
+        Eftersom form.html finns i samma mapp kan vi bara skriva
+        "form.html" som sökväg.
+    -->
+    <a href="form.html">Gå till studentformuläret</a>
+
+</body>
+</html>
